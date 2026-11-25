@@ -5,8 +5,8 @@ plugins {
     id "com.diffplug.spotless" version '5.12.4'
 }
 
-group = 'pro.civitaspo'
-version = '0.0.3'
+group = 'com.github.Gunosy'
+version = '0.0.4'
 
 def digdagVersion = '0.10.0'
 def scalaSemanticVersion = "2.13.5"
@@ -32,11 +32,16 @@ dependencyLocking {
     lockMode = LockMode.STRICT
     lockAllConfigurations()
 }
+// The scala plugin resolves this configuration for zinc, and Gradle 6.8 cannot write its lock state.
+configurations.matching { it.name.startsWith('incrementalScalaAnalysis') }.all {
+    resolutionStrategy.deactivateDependencyLocking()
+}
 
 shadowJar {
     classifier = null
     dependencies {
         exclude(dependency('io.digdag:.*'))
+        exclude(dependency('com.fasterxml.jackson.*:.*:.*'))
     }
 }
 
