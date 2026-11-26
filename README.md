@@ -1,5 +1,5 @@
 # digdag-operator-param
-[![Jitpack](https://jitpack.io/v/Gunosy/digdag-operator-param.svg)](https://jitpack.io/#Gunosy/digdag-operator-param) [![CircleCI](https://circleci.com/gh/civitaspo/digdag-operator-param.svg?style=shield)](https://circleci.com/gh/civitaspo/digdag-operator-param) [![Digdag](https://img.shields.io/badge/digdag-v0.10.0-brightgreen.svg)](https://github.com/treasure-data/digdag/releases/tag/v0.10.0)
+[![Jitpack](https://jitpack.io/v/Gunosy/digdag-operator-param.svg)](https://jitpack.io/#Gunosy/digdag-operator-param) [![Digdag](https://img.shields.io/badge/digdag-v0.10.0-brightgreen.svg)](https://github.com/treasure-data/digdag/releases/tag/v0.10.0)
 
 digdag plugin for operating params.
 
