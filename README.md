@@ -1,5 +1,5 @@
 # digdag-operator-param
-[![Jitpack](https://jitpack.io/v/pro.civitaspo/digdag-operator-param.svg)](https://jitpack.io/#pro.civitaspo/digdag-operator-param) [![CircleCI](https://circleci.com/gh/civitaspo/digdag-operator-param.svg?style=shield)](https://circleci.com/gh/civitaspo/digdag-operator-param) [![Digdag](https://img.shields.io/badge/digdag-v0.9.30-brightgreen.svg)](https://github.com/treasure-data/digdag/releases/tag/v0.9.30)
+[![Jitpack](https://jitpack.io/v/Gunosy/digdag-operator-param.svg)](https://jitpack.io/#Gunosy/digdag-operator-param) [![Digdag](https://img.shields.io/badge/digdag-v0.10.0-brightgreen.svg)](https://github.com/treasure-data/digdag/releases/tag/v0.10.0)
 
 digdag plugin for operating params.
 
@@ -17,7 +17,7 @@ _export:
     repositories:
       - https://jitpack.io
     dependencies:
-      - pro.civitaspo:digdag-operator-param:0.0.2
+      - com.github.Gunosy:digdag-operator-param:v0.0.4
 
 +show1:
   echo>: "hoge: ${typeof(hoge) == 'undefined' ? 'None' : hoge}, a.b: ${typeof(a) == 'undefined' ? 'None' : typeof(a.b) == 'undefined' ? 'None' : a.b}"
